@@ -1,0 +1,52 @@
+@import './theme';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;    
+  height: 100%;
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    .header {
+      flex-direction: column;
+    }
+  }
+  
+  .section {
+    width: 1/2;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-blue;
+    text-align: center;
+
+    h1 {
+      margin: 0px 16px;
+    }
+  }
+
+  .two {     
+    margin: 0;
+    padding: 0;
+
+    img {      
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  
+}

@@ -1,0 +1,64 @@
+@import '../theme';
+
+.main {
+    background-color: $main-pink;
+    display: flex;
+
+
+    .container {
+        height: 100%;      
+        padding: 50px 0px;
+        margin-left: auto;
+        margin-right: auto;
+        // min-width: 600px;
+        width: 80vw;
+        flex-grow: 1;        
+    
+        .search {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between; 
+            align-items: center;   
+                    
+            .search-input {
+                padding: 8px 14px;
+                border-radius: 4px;
+                width: 3/4;
+                flex-grow: 1;
+            }
+    
+            .search-button {
+                background-color: $main-blue;
+                border: none;
+                padding: 8px 14px;
+                width: 1/4;
+                border-radius: 4px;
+            }
+        }
+
+        ul {
+            color: white;
+            margin: 0;
+            padding: 0px 0px 0px 20px;                             
+
+            .brand {
+                font-weight: bold;
+                text-transform: capitalize; 
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 600px !important;        
+    }
+  }
+
+@media (max-width: 768px) {
+    .container {        
+        width: auto !important;            
+        margin: 0px 16px !important;
+    }
+  }
